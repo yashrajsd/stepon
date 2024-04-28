@@ -158,10 +158,9 @@ function App(): JSX.Element {
       setIsLogged(Boolean(data));
       } 
       const timer = setTimeout(() => {
-        setLoading(false); // After 2 seconds, set loading to false
-    }, 2000); // 2000 milliseconds = 2 seconds
+        setLoading(false); 
+    }, 2000); 
 
-    // Cleanup function to clear the timer
     return () => clearTimeout(timer);
     };
     getToken();
